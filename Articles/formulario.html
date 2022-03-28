@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content = "Eric Arteaga Martín">
+    <meta name="robots" content="all">
+    <meta name="description" content ="Subscribete a nuestra página de meditación para estar bien informado y enterarte de cuando hay nuevo contenido en la página">
+    <meta name="keywords" content="Formulario, curiosidades de la meditación, espiritualidad, forma vida alternativa, disciplina, mente, saber vivir">
+
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="../Icons/lotus.png" type="image/png">
+    <title>Formulario</title>
+</head>
+<body>
+    <header >
+        <h1>Formulario</h1>
+    </header>
+    <br>
+    <main class="formulario"><br>
+        <form name="formulario" action="eriartmar3010@g.educaand.es" method="post" target="_blank" enctype="text/plain">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" size="8">
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" min="0">
+                <br>
+                <label for="telefono">Número de telefono:</label>
+                <input type="tel" name="telefono" id="telefono">
+                <br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo">
+                <br>
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color" id="color">
+                <br>
+                <label for="satisfacción">Satisfacción con la página:</label>
+                <input type="range" name="satisfacción" id="satisfacción" min="0" max="10" step="1">
+                <br>
+
+                <p>Subscribase a las secciones de la página para recibir información de ellas</p>
+                <input type="checkbox" name="introduccion" id="introduccion" value="Introducción">
+                <label for="introduccion">Introducción</label>
+                <br>
+                <input type="checkbox" name="meditacion" id="meditacion" value="Videos sobre la meditación">
+                <label for="meditacion">Videos sobre la meditación</label>
+                <br>
+                <input type="checkbox" name="instrumentos" id="instrumentos" value="Instrumentos relacionados con la meditación">
+                <label for="instrumentos">Instrumentos relacionados con la meditación</label>
+                <br>
+
+                <p>Indique por donde quiere recibir la información:</p>
+                <input type="radio" name="sms" id="sms" value="SMS">
+                <label for="sms">SMS</label>
+                <br>
+                <input type="radio" name="correo_electrónico" id="correo_electrónico" value="Correo electrónico">
+                <label for="correo_electrónico">Correo electrónico</label>
+                <br>
+                <input type="radio" name="ambas" id="ambas" value="SMS y correo electrónico">
+                <label for="ambas">Ambas</label>
+                <br>
+
+                
+                <p>Escribe un mensaje que quieres que nos llegue:</p>
+                <textarea name="mensaje" id="mensaje" rows="8" maxlength="150" ></textarea>
+                <br/>
+            </fieldset>
+            <fieldset>
+                <legend>Datos sobre tu meditación</legend>
+                <p></p>
+                <label for="años">Años meditando:</label>
+                <input type="number" name="años" id="años" min="0">
+                <br>
+                <label for="horas">Aguante meditando:</label>
+                <input type="time" name="horas" id="horas">
+                <br>
+                <label for="postura">Seleccione su Postura de meditación favorita:</label><br>
+                <select name="postura" id="postura">
+                    <option value="ov">Ninguna </option>
+                    <optgroup label="Posturas">
+
+                        <option value="Postura de loto completo">Postura de loto completo</option>
+
+                        <option value="Postura de medio loto">Postura de medio loto</option>
+
+                        <option value="Postura de cuarto de loto">Postura de cuarto de loto</option>
+                    </optgroup>
+                </select>
+                <br>
+                
+            </fieldset>
+
+            <!--Botones-->
+            <button type="submit" name="enviar" id="enviar" value="enviar">Enviar formulario</button>
+
+            <button type="reset" name="reset" id="reset" value="reset">Restablecer valores</button>
+
+        </form>
+    
+        <br>
+    </main>
+
+</body>
+</html>
